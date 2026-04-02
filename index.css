@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Noto Serif SC", serif;
+}
+
+/* Leaflet styles */
+@import "leaflet/dist/leaflet.css";
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  background: #f8f9fa;
+}
+
+.custom-marker {
+  background: none;
+  border: none;
+}
+
+.custom-popup .leaflet-popup-content-wrapper {
+  border-radius: 12px;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-popup .leaflet-popup-content {
+  margin: 0 !important;
+  width: 240px !important;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .custom-popup .leaflet-popup-content {
+    width: 220px !important;
+  }
+}
+
+.custom-popup .leaflet-popup-tip {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}

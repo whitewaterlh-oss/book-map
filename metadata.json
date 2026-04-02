@@ -1,0 +1,7 @@
+{
+  "name": "中国近现代文学地图",
+  "description": "一个交互式的中国近现代知名小说文学地理分布地图，涵盖大江南北的作家及其代表作背景地。",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
